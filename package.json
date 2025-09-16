@@ -1,0 +1,24 @@
+{
+	"name": "trific-platform-docs",
+	"version": "1.0.0",
+	"description": "Official documentation for the Trific platform - a curated marketplace connecting clients with pre-vetted service providers",
+	"homepage": "https://github.com/TenderSure-Africa-SEZ/trific-platform-docs#readme",
+	"bugs": {
+		"url": "https://github.com/TenderSure-Africa-SEZ/trific-platform-docs/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TenderSure-Africa-SEZ/trific-platform-docs.git"
+	},
+	"license": "MIT",
+	"author": "Michael Karanja",
+	"type": "module",
+	"scripts": {
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs"
+	},
+	"devDependencies": {
+		"vitepress": "^1.6.4"
+	}
+}
