@@ -4,8 +4,8 @@ This directory contains static assets that will be served at the root of the doc
 
 ## Files
 
-- `logo.svg` - The main Trific logo displayed in the site header
-- `favicon.ico` - The site favicon shown in browser tabs
+-   `logo.svg` - The main Trific logo displayed in the site header
+-   `favicon.ico` - The site favicon shown in browser tabs
 
 ## Usage
 
