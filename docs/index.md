@@ -7,6 +7,9 @@ hero:
     tagline: A curated marketplace connecting clients with pre-vetted service providers
     actions:
         - theme: brand
+          text: About Platform
+          link: /platform
+        - theme: brand
           text: Get Started
           link: /getting-started/
         - theme: alt
