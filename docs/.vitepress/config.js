@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'A curated marketplace connecting clients with pre-vetted service providers',
   
   base: '/trific-platform-docs/', // Repository name
+  ignoreDeadLinks: true, // Ignore dead links for now - they're placeholder content
   
   themeConfig: {
     logo: '/logo.svg',
