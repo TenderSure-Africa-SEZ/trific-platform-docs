@@ -1,6 +1,6 @@
 # API Reference
 
-This section contains the API documentation for the Trific platform.
+This section contains the API documentation for the TRIFIC platform.
 
 ## Endpoints
 

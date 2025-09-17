@@ -1,6 +1,6 @@
 # Quick Start (5 Minutes)
 
-Get up and running with the Trific Platform in just 5 minutes! This guide will have you making your first API call and understanding the core concepts quickly.
+Get up and running with the TRIFIC Platform in just 5 minutes! This guide will have you making your first API call and understanding the core concepts quickly.
 
 ## Prerequisites
 
@@ -70,9 +70,9 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
 
 ```javascript
 // Initialize the SDK
-const TrificSDK = require("@trific/platform-sdk");
+const TRIFICSDK = require("@trific/platform-sdk");
 
-const client = new TrificSDK({
+const client = new TRIFICSDK({
 	apiKey: process.env.TRIFIC_API_KEY,
 	baseUrl: "https://api.trific.platform/v1",
 });
@@ -94,11 +94,11 @@ testConnection();
 
 ### Understanding User Roles
 
-The Trific Platform has four primary user types:
+The TRIFIC Platform has four primary user types:
 
 ```mermaid
 graph TB
-    A[Trific Platform] --> B[Clients]
+    A[TRIFIC Platform] --> B[Clients]
     A --> C[Providers]
     A --> D[Admin - TenderSure]
     A --> E[Management - Trific]
@@ -189,7 +189,7 @@ Now that you're set up, dive deeper:
 
 -   **[Webhooks](/api/webhooks/)** - Real-time event notifications
 -   **[Integration Guides](/integrations/)** - Third-party integrations
--   **[Custom Development](/guides/development/)** - Building on Trific
+-   **[Custom Development](/guides/development/)** - Building on TRIFIC
 
 ## Need Help?
 
@@ -208,6 +208,6 @@ Want to see a complete example? Check out our sample projects:
 
 ---
 
-**Congratulations!** 🎉 You now have the Trific Platform running and understand the core concepts. Ready to build something amazing?
+**Congratulations!** 🎉 You now have the TRIFIC Platform running and understand the core concepts. Ready to build something amazing?
 
 [Continue to First Steps →](/getting-started/first-steps)

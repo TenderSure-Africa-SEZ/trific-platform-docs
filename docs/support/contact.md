@@ -1,6 +1,6 @@
 # Contact Support
 
-Get in touch with our support team for assistance with the Trific platform.
+Get in touch with our support team for assistance with the TRIFIC platform.
 
 ## Contact Methods
 

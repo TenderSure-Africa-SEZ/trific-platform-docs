@@ -1,6 +1,6 @@
 # Payment Gateway Integration
 
-The Trific platform integrates with multiple payment gateways to provide secure, reliable, and globally accessible payment processing. Our multi-gateway approach ensures high availability, competitive rates, and support for diverse payment methods worldwide.
+The TRIFIC platform integrates with multiple payment gateways to provide secure, reliable, and globally accessible payment processing. Our multi-gateway approach ensures high availability, competitive rates, and support for diverse payment methods worldwide.
 
 ## Payment Architecture
 
@@ -146,7 +146,7 @@ interface EscrowSystem {
 ```mermaid
 sequenceDiagram
     participant C as Client
-    participant T as Trific Platform
+    participant T as TRIFIC Platform
     participant E as Escrow Account
     participant P as Provider
 

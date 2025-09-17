@@ -1,6 +1,6 @@
 # Jobs API Endpoints
 
-API endpoints for managing jobs on the Trific platform.
+API endpoints for managing jobs on the TRIFIC platform.
 
 ## Endpoints
 

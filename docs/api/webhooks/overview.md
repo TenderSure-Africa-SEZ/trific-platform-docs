@@ -4,7 +4,7 @@ Comprehensive webhook system for receiving real-time platform notifications.
 
 ## What are Webhooks?
 
-Webhooks are HTTP callbacks that notify your application when specific events occur on the Trific platform. Instead of continuously polling our API for changes, webhooks push updates to your system in real-time.
+Webhooks are HTTP callbacks that notify your application when specific events occur on the TRIFIC platform. Instead of continuously polling our API for changes, webhooks push updates to your system in real-time.
 
 ## Benefits
 

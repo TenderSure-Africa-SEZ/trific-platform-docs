@@ -1,6 +1,6 @@
 # Client Handbook
 
-Comprehensive guide for clients using the Trific platform to find and work with service providers.
+Comprehensive guide for clients using the TRIFIC platform to find and work with service providers.
 
 ## Getting Started as a Client
 

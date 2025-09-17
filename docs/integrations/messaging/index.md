@@ -4,7 +4,7 @@ Integrated communication systems for seamless client-provider interaction.
 
 ## Overview
 
-The Trific platform integrates with multiple messaging and communication services to provide comprehensive communication capabilities for clients, providers, and administrators.
+The TRIFIC platform integrates with multiple messaging and communication services to provide comprehensive communication capabilities for clients, providers, and administrators.
 
 ## Email Services
 
@@ -108,7 +108,7 @@ The Trific platform integrates with multiple messaging and communication service
 
 ```javascript
 // Send message via platform API
-const message = await trific.messaging.send({
+const message = await TRIFIC.messaging.send({
 	recipient: "user_id",
 	channel: "email|sms|push",
 	template: "template_id",
@@ -120,7 +120,7 @@ const message = await trific.messaging.send({
 
 ```javascript
 // Create custom notification
-const notification = await trific.notifications.create({
+const notification = await TRIFIC.notifications.create({
 	type: "project_update",
 	recipients: ["client_id", "provider_id"],
 	title: "Project Milestone Completed",

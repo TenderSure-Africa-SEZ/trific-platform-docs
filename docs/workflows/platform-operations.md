@@ -1,6 +1,6 @@
 # Platform Operations Workflow
 
-This documentation outlines the comprehensive operational workflows that ensure the Trific platform runs smoothly, maintains high quality standards, and delivers exceptional user experience across all touchpoints.
+This documentation outlines the comprehensive operational workflows that ensure the TRIFIC platform runs smoothly, maintains high quality standards, and delivers exceptional user experience across all touchpoints.
 
 ## Overview
 

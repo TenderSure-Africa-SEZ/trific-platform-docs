@@ -1,12 +1,12 @@
-# Trific Platform
+# TRIFIC Platform
 
 ## Welcome to the Future of Service Procurement
 
-Trific is a revolutionary curated marketplace that transforms how corporate clients connect with pre-vetted service providers. Say goodbye to endless bidding processes and hello to direct, quality-assured engagements.
+TRIFIC is a revolutionary curated marketplace that transforms how corporate clients connect with pre-vetted service providers. Say goodbye to endless bidding processes and hello to direct, quality-assured engagements.
 
 ---
 
-## 🚀 Why Choose Trific?
+## 🚀 Why Choose TRIFIC?
 
 ### **Pre-Vetted Excellence**
 Every service provider on our platform undergoes rigorous TenderSure evaluation with quarterly re-assessments, ensuring you work with only the best.
@@ -135,6 +135,6 @@ Ready to transform your service procurement process?
 
 ---
 
-*Trific Platform - Where Quality Meets Efficiency*
+*TRIFIC Platform - Where Quality Meets Efficiency*
 
 **© 2024 TenderSure Africa SEZ. All rights reserved.**

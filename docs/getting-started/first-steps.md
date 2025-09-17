@@ -1,6 +1,6 @@
 # First Steps After Installation
 
-Welcome to Trific Platform! Now that you have the platform installed and running, let's walk through the essential first steps to get you productive quickly.
+Welcome to TRIFIC Platform! Now that you have the platform installed and running, let's walk through the essential first steps to get you productive quickly.
 
 ## Quick Orientation
 

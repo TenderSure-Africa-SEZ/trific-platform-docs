@@ -1,6 +1,6 @@
 # Business Model
 
-The Trific Platform operates on a curated marketplace model that generates value through quality assurance, direct engagement, and secure transaction facilitation. Our multi-sided platform creates sustainable revenue while delivering exceptional value to all participants.
+The TRIFIC Platform operates on a curated marketplace model that generates value through quality assurance, direct engagement, and secure transaction facilitation. Our multi-sided platform creates sustainable revenue while delivering exceptional value to all participants.
 
 ## Platform Value Proposition
 
@@ -21,7 +21,7 @@ graph TB
         G[Clients: Risk Reduction]
         H[Providers: Market Access]
         I[TenderSure: Revenue Growth]
-        J[Trific: Sustainable Business]
+        J[TRIFIC: Sustainable Business]
     end
 
     B --> G
@@ -116,7 +116,7 @@ const examples = [
 
 **Revenue Sharing with TenderSure**
 
--   **Split**: 60% Trific, 40% TenderSure
+-   **Split**: 60% TRIFIC, 40% TenderSure
 -   **Volume Bonuses**: Additional incentives for high-volume vetting
 -   **Performance Bonuses**: Quality-based revenue sharing adjustments
 

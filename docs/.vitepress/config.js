@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Trific Platform Docs',
+  title: 'TRIFIC Platform Docs',
   description: 'A curated marketplace connecting clients with pre-vetted service providers',
   
   base: '/trific-platform-docs/', // Repository name
@@ -342,7 +342,7 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Management Portal (Trific)',
+          text: 'Management Portal (TRIFIC)',
           collapsed: true,
           items: [
             { text: 'Overview', link: '/portals/management/' },
@@ -630,7 +630,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 Trific Platform'
+      copyright: 'Copyright © 2024 TRIFIC Platform'
     },
 
     search: {

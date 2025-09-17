@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-Common questions and answers about the Trific platform.
+Common questions and answers about the TRIFIC platform.
 
 ## General Questions
 
-### What is Trific?
+### What is TRIFIC?
 
-Trific is a comprehensive platform that connects clients with verified service providers across various industries, facilitating secure project collaboration and payments.
+TRIFIC is a comprehensive platform that connects clients with verified service providers across various industries, facilitating secure project collaboration and payments.
 
 ### How do I get started?
 
@@ -15,7 +15,7 @@ Trific is a comprehensive platform that connects clients with verified service p
 3. Browse services or post jobs
 4. Start collaborating!
 
-### Is Trific free to use?
+### Is TRIFIC free to use?
 
 Account creation and browsing are free. We charge transaction fees on completed projects to maintain platform quality and security.
 

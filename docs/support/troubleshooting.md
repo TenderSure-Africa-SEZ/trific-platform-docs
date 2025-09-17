@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Common issues and their solutions for the Trific platform.
+Common issues and their solutions for the TRIFIC platform.
 
 ## Login Issues
 

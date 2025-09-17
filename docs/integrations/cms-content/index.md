@@ -4,7 +4,7 @@ Storyblok CMS integration for dynamic content management and optimization.
 
 ## Overview
 
-The Trific platform integrates with Storyblok CMS to provide flexible, scalable content management capabilities for marketing pages, documentation, and dynamic platform content.
+The TRIFIC platform integrates with Storyblok CMS to provide flexible, scalable content management capabilities for marketing pages, documentation, and dynamic platform content.
 
 ## Storyblok CMS Integration
 

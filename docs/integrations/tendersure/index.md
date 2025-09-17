@@ -1,6 +1,6 @@
 # TenderSure Integration
 
-TenderSure is the comprehensive provider vetting and qualification system that ensures all service providers on the Trific platform meet strict quality, competency, and reliability standards. This integration is fundamental to maintaining platform quality and client trust.
+TenderSure is the comprehensive provider vetting and qualification system that ensures all service providers on the TRIFIC platform meet strict quality, competency, and reliability standards. This integration is fundamental to maintaining platform quality and client trust.
 
 ## Overview
 
@@ -16,7 +16,7 @@ The TenderSure integration provides:
 
 ```mermaid
 graph TB
-    A[Trific Platform] --> B[TenderSure API Gateway]
+    A[TRIFIC Platform] --> B[TenderSure API Gateway]
     B --> C[Vetting Engine]
     B --> D[Scoring System]
     B --> E[Verification Services]

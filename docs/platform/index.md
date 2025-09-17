@@ -1,6 +1,6 @@
 # Platform Overview
 
-The Trific Platform is a revolutionary curated marketplace that transforms how businesses connect with service providers through a unique direct engagement model powered by rigorous quality assurance.
+The TRIFIC Platform is a revolutionary curated marketplace that transforms how businesses connect with service providers through a unique direct engagement model powered by rigorous quality assurance.
 
 ## Platform Vision
 
@@ -17,7 +17,7 @@ Trific eliminates the inefficiencies of traditional bidding marketplaces by crea
 
 ### Traditional Marketplaces vs. Trific
 
-| Traditional Platforms | Trific Platform                 |
+| Traditional Platforms | TRIFIC Platform                 |
 | --------------------- | ------------------------------- |
 | Open registration     | Rigorous vetting required       |
 | Bid-based competition | Direct engagement model         |

@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This section covers the technical architecture of the Trific platform.
+This section covers the technical architecture of the TRIFIC platform.
 
 ## Sections
 

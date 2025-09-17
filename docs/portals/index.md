@@ -1,6 +1,6 @@
 # Portal Documentation
 
-The Trific platform consists of multiple specialized portals, each designed for specific user types and use cases. This section provides comprehensive documentation for all portals.
+The TRIFIC platform consists of multiple specialized portals, each designed for specific user types and use cases. This section provides comprehensive documentation for all portals.
 
 ## Platform Portals
 

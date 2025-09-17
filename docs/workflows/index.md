@@ -1,6 +1,6 @@
 # Platform Workflows
 
-This section provides comprehensive documentation of all key workflows in the Trific platform, covering the complete user journeys and business processes that drive the marketplace.
+This section provides comprehensive documentation of all key workflows in the TRIFIC platform, covering the complete user journeys and business processes that drive the marketplace.
 
 ## Core User Workflows
 

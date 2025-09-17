@@ -1,6 +1,6 @@
 # Monitoring & Observability
 
-System monitoring, logging, and observability for the Trific platform.
+System monitoring, logging, and observability for the TRIFIC platform.
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # API Endpoints - Providers
 
-The Providers API enables management of service provider profiles, capabilities, and business information within the Trific Platform ecosystem.
+The Providers API enables management of service provider profiles, capabilities, and business information within the TRIFIC Platform ecosystem.
 
 ## Overview
 

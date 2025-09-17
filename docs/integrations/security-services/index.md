@@ -1,6 +1,6 @@
 # Security Services Integration
 
-Advanced security and compliance service integration for the Trific platform.
+Advanced security and compliance service integration for the TRIFIC platform.
 
 ## Overview
 
@@ -124,7 +124,7 @@ Comprehensive security integrations that protect the platform, users, and transa
 
 ```javascript
 // Fraud detection API
-const riskAssessment = await trific.security.assessRisk({
+const riskAssessment = await TRIFIC.security.assessRisk({
 	user_id: "user_123",
 	transaction: {
 		amount: 5000,
@@ -139,7 +139,7 @@ const riskAssessment = await trific.security.assessRisk({
 });
 
 // Identity verification API
-const verification = await trific.security.verifyIdentity({
+const verification = await TRIFIC.security.verifyIdentity({
 	user_id: "user_123",
 	document_type: "passport",
 	document_image: "base64_image_data",
@@ -151,14 +151,14 @@ const verification = await trific.security.verifyIdentity({
 
 ```javascript
 // Compliance check
-const complianceStatus = await trific.compliance.checkStatus({
+const complianceStatus = await TRIFIC.compliance.checkStatus({
 	user_id: "user_123",
 	regulations: ["gdpr", "ccpa", "pci_dss"],
 	data_types: ["personal", "financial", "biometric"],
 });
 
 // Audit trail
-const auditTrail = await trific.compliance.getAuditTrail({
+const auditTrail = await TRIFIC.compliance.getAuditTrail({
 	user_id: "user_123",
 	start_date: "2025-01-01",
 	end_date: "2025-09-17",
@@ -202,7 +202,7 @@ const riskPipeline = [
 	"fraud_model_scoring",
 ];
 
-const riskScore = await trific.security.assessRisk(riskPipeline, userData);
+const riskScore = await TRIFIC.security.assessRisk(riskPipeline, userData);
 ```
 
 ## Security Architecture

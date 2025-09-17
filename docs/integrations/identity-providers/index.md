@@ -4,7 +4,7 @@ Comprehensive authentication and identity management integration.
 
 ## Overview
 
-The Trific platform integrates with multiple identity providers to offer secure, convenient authentication options for users while maintaining the highest security standards.
+The TRIFIC platform integrates with multiple identity providers to offer secure, convenient authentication options for users while maintaining the highest security standards.
 
 ## OAuth 2.0/OpenID Connect
 
@@ -150,14 +150,14 @@ The Trific platform integrates with multiple identity providers to offer secure,
 
 ```javascript
 // Initialize OAuth flow
-const authUrl = await trific.auth.getAuthorizationUrl({
+const authUrl = await TRIFIC.auth.getAuthorizationUrl({
 	provider: "google",
 	scope: ["profile", "email"],
 	state: "random-state-string",
 });
 
 // Handle callback
-const tokens = await trific.auth.handleCallback({
+const tokens = await TRIFIC.auth.handleCallback({
 	code: "authorization-code",
 	state: "random-state-string",
 });
@@ -167,13 +167,13 @@ const tokens = await trific.auth.handleCallback({
 
 ```javascript
 // Get user identity information
-const identity = await trific.identity.getUser({
+const identity = await TRIFIC.identity.getUser({
 	access_token: tokens.access_token,
 	provider: "google",
 });
 
 // Link additional identity provider
-await trific.identity.linkProvider({
+await TRIFIC.identity.linkProvider({
 	user_id: identity.user_id,
 	provider: "linkedin",
 	provider_user_id: "linkedin-user-id",

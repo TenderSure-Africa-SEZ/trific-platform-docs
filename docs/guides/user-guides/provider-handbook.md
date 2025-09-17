@@ -1,6 +1,6 @@
 # Provider Handbook
 
-Comprehensive guide for service providers to succeed on the Trific platform.
+Comprehensive guide for service providers to succeed on the TRIFIC platform.
 
 ## Getting Started as a Provider
 

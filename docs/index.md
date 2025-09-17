@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-    name: "Trific Platform"
+    name: "TRIFIC Platform"
     text: "Connecting Clients with Pre-Vetted Service Providers"
     tagline: "A curated marketplace built on trust, quality, and reliability"
     image:
         src: /logo.svg
-        alt: Trific Platform
+        alt: TRIFIC Platform
     actions:
         - theme: brand
           text: Get Started
@@ -19,7 +19,7 @@ hero:
 features:
     - icon: 🚀
       title: Quick Start (5 minutes)
-      details: Get up and running with Trific Platform in just 5 minutes with our streamlined setup process.
+      details: Get up and running with TRIFIC Platform in just 5 minutes with our streamlined setup process.
       link: /getting-started/quick-start
     - icon: 🔒
       title: Enterprise-Grade Security
@@ -48,7 +48,7 @@ features:
 Select the documentation path that matches your role and needs:
 
 ::: tip For Clients
-**New to Trific?** Start with our [Client Quick Start Guide →](/getting-started/quick-start)  
+**New to TRIFIC?** Start with our [Client Quick Start Guide →](/getting-started/quick-start)  
 **Need specific help?** Explore the [Client Portal Documentation →](/portals/client/)  
 **Enterprise setup?** Check [Client Journey Workflows →](/workflows/client-journey/)
 :::
@@ -67,7 +67,7 @@ Select the documentation path that matches your role and needs:
 
 ::: note For Administrators
 **TenderSure Admin?** Access [Admin Portal Documentation →](/portals/admin/)  
-**Trific Management?** Review [Management Portal Guide →](/portals/management/)  
+**TRIFIC Management?** Review [Management Portal Guide →](/portals/management/)  
 **System operations?** Check [Technical Monitoring →](/technical/monitoring/)
 :::
 

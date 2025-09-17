@@ -4,7 +4,7 @@ Webhook system for real-time notifications about platform events.
 
 ## Overview
 
-Webhooks allow your application to receive real-time notifications when events occur on the Trific platform. This enables you to keep your systems in sync and respond immediately to important changes.
+Webhooks allow your application to receive real-time notifications when events occur on the TRIFIC platform. This enables you to keep your systems in sync and respond immediately to important changes.
 
 ## Event Categories
 

@@ -1,6 +1,6 @@
 # Client Journey
 
-Detailed workflow for client experience on the Trific platform.
+Detailed workflow for client experience on the TRIFIC platform.
 
 ## Journey Overview
 

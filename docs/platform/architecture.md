@@ -1,10 +1,10 @@
 # Platform Architecture
 
-This document provides a comprehensive overview of the Trific Platform's technical architecture, including system design, technology stack, deployment strategy, and integration patterns.
+This document provides a comprehensive overview of the TRIFIC Platform's technical architecture, including system design, technology stack, deployment strategy, and integration patterns.
 
 ## Architecture Overview
 
-The Trific Platform follows a modern microservices architecture designed for scalability, reliability, and maintainability. The system is built using cloud-native principles with containerization, auto-scaling, and comprehensive monitoring.
+The TRIFIC Platform follows a modern microservices architecture designed for scalability, reliability, and maintainability. The system is built using cloud-native principles with containerization, auto-scaling, and comprehensive monitoring.
 
 ### High-Level Architecture Diagram
 

@@ -4,7 +4,7 @@ Multi-channel notification and communication delivery systems.
 
 ## Overview
 
-The Trific platform provides comprehensive notification services across multiple channels to ensure users stay informed about important platform activities and updates.
+The TRIFIC platform provides comprehensive notification services across multiple channels to ensure users stay informed about important platform activities and updates.
 
 ## Push Notifications
 
@@ -143,7 +143,7 @@ await notificationService.send(notification);
 
 ```javascript
 // Send custom notification
-const result = await trific.notifications.send({
+const result = await TRIFIC.notifications.send({
 	recipient: "user_123",
 	title: "Project Update",
 	message: "Your project has been updated",

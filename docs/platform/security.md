@@ -1,6 +1,6 @@
 # Security Overview
 
-Security is fundamental to the Trific Platform's operation, given our role in facilitating financial transactions and handling sensitive business information. Our comprehensive security framework protects all stakeholders while ensuring regulatory compliance and maintaining user trust.
+Security is fundamental to the TRIFIC Platform's operation, given our role in facilitating financial transactions and handling sensitive business information. Our comprehensive security framework protects all stakeholders while ensuring regulatory compliance and maintaining user trust.
 
 ## Security Philosophy
 

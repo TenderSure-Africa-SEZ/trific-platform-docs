@@ -4,7 +4,7 @@ Comprehensive vetting workflow to ensure platform quality and security.
 
 ## Vetting Overview
 
-The vetting process is a thorough evaluation system that ensures only qualified, trustworthy providers join the Trific platform, maintaining high service standards and client satisfaction.
+The vetting process is a thorough evaluation system that ensures only qualified, trustworthy providers join the TRIFIC platform, maintaining high service standards and client satisfaction.
 
 ## Vetting Stages
 

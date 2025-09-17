@@ -599,10 +599,10 @@ interface WebhookEvent {
 
 ### Signature Verification
 
-Each webhook includes a signature in the `Trific-Signature` header:
+Each webhook includes a signature in the `TRIFIC-Signature` header:
 
 ```http
-Trific-Signature: t=1643723400,v1=5257a869e7ecebeda32affa62cdca3fa51cad7e77a0e56ff536d0ce8e108d8bd
+TRIFIC-Signature: t=1643723400,v1=5257a869e7ecebeda32affa62cdca3fa51cad7e77a0e56ff536d0ce8e108d8bd
 ```
 
 #### Verification Example (Node.js)
@@ -631,7 +631,7 @@ function verifyWebhookSignature(payload, signature, secret) {
 
 // Usage
 const rawBody = req.body; // Raw request body as string
-const signature = req.headers["trific-signature"];
+const signature = req.headers["TRIFIC-signature"];
 const webhookSecret = process.env.TRIFIC_WEBHOOK_SECRET;
 
 if (!verifyWebhookSignature(rawBody, signature, webhookSecret)) {

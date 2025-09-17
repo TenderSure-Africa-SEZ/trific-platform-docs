@@ -4,7 +4,7 @@ Comprehensive analytics and business intelligence platform integration.
 
 ## Overview
 
-The Trific platform integrates with multiple analytics services to provide comprehensive insights into user behavior, platform performance, and business metrics.
+The TRIFIC platform integrates with multiple analytics services to provide comprehensive insights into user behavior, platform performance, and business metrics.
 
 ## Google Analytics Integration
 
@@ -60,7 +60,7 @@ The Trific platform integrates with multiple analytics services to provide compr
 
 ```javascript
 // Custom event tracking
-trific.analytics.track("project_created", {
+TRIFIC.analytics.track("project_created", {
 	project_id: "proj_123",
 	client_id: "client_456",
 	category: "web_development",
@@ -69,7 +69,7 @@ trific.analytics.track("project_created", {
 });
 
 // User identification
-trific.analytics.identify("user_789", {
+TRIFIC.analytics.identify("user_789", {
 	role: "client",
 	plan: "professional",
 	registration_date: "2025-01-15",

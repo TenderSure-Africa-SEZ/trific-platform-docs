@@ -1,10 +1,10 @@
 # Communication Flows
 
-Effective communication is fundamental to the success of the Trific platform. This documentation outlines the structured communication workflows that ensure clear, secure, and documented interactions between all platform participants.
+Effective communication is fundamental to the success of the TRIFIC platform. This documentation outlines the structured communication workflows that ensure clear, secure, and documented interactions between all platform participants.
 
 ## Overview
 
-The Trific platform implements a multi-layered communication system designed to facilitate:
+The TRIFIC platform implements a multi-layered communication system designed to facilitate:
 
 -   **Secure Messaging**: End-to-end encrypted communication channels
 -   **Structured Workflows**: Predefined communication patterns for common scenarios

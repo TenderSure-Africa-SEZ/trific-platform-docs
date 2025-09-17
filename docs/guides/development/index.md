@@ -1,6 +1,6 @@
 # Development Guides
 
-Technical guides for developers building on the Trific platform.
+Technical guides for developers building on the TRIFIC platform.
 
 ## Getting Started
 

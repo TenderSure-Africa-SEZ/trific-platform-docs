@@ -1,4 +1,4 @@
-# Trific eCommerce — Landing Page User Manual & E2E Testing Workflow
+# TRIFIC eCommerce — Landing Page User Manual & E2E Testing Workflow
 
 ---
 
@@ -6,9 +6,9 @@
 
 ## Overview & Purpose
 
-The Trific eCommerce **Landing Page** is the public, non-authenticated entry to the marketplace. It should:
+The TRIFIC eCommerce **Landing Page** is the public, non-authenticated entry to the marketplace. It should:
 
--   Explain value (what Trific is, who it serves).
+-   Explain value (what TRIFIC is, who it serves).
 -   Offer fast paths to start browsing.
 -   Showcase featured categories/listings, promotions, and trust signals.
 -   Provide clear navigation to other public content (About, Help, Contact, etc.).

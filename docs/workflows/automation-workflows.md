@@ -1,6 +1,6 @@
 # Automation Workflows
 
-The Trific platform leverages extensive automation to enhance efficiency, improve user experience, and ensure consistent quality across all operations. This documentation outlines the comprehensive automation frameworks that power the platform's intelligent operations.
+The TRIFIC platform leverages extensive automation to enhance efficiency, improve user experience, and ensure consistent quality across all operations. This documentation outlines the comprehensive automation frameworks that power the platform's intelligent operations.
 
 ## Automation Strategy
 

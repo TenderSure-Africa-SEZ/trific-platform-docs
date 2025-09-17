@@ -1,6 +1,6 @@
 # API Endpoints - Clients
 
-The Clients API enables management of client profiles, preferences, and account information within the Trific Platform ecosystem.
+The Clients API enables management of client profiles, preferences, and account information within the TRIFIC Platform ecosystem.
 
 ## Overview
 

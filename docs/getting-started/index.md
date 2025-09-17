@@ -1,10 +1,10 @@
-# Getting Started with Trific Platform
+# Getting Started with TRIFIC Platform
 
-Welcome to the Trific Platform! This comprehensive guide will help you understand our marketplace ecosystem, set up your environment, and start using the platform effectively.
+Welcome to the TRIFIC Platform! This comprehensive guide will help you understand our marketplace ecosystem, set up your environment, and start using the platform effectively.
 
-## What is Trific Platform?
+## What is TRIFIC Platform?
 
-Trific is a revolutionary curated marketplace that connects corporate clients with pre-qualified service providers through a unique direct engagement model. Unlike traditional bidding platforms, Trific eliminates the need for clients to post jobs and wait for bids - instead, they can directly engage with pre-vetted providers.
+TRIFIC is a revolutionary curated marketplace that connects corporate clients with pre-qualified service providers through a unique direct engagement model. Unlike traditional bidding platforms, TRIFIC eliminates the need for clients to post jobs and wait for bids - instead, they can directly engage with pre-vetted providers.
 
 ### Core Value Propositions
 
@@ -43,7 +43,7 @@ graph TB
         D[Client Portal]
         E[Provider Portal]
         F[Admin Portal - TenderSure]
-        G[Management Portal - Trific]
+        G[Management Portal - TRIFIC]
     end
 
     subgraph "Core Services"
@@ -113,9 +113,9 @@ graph TB
 -   Handle vetting appeals and exceptions
 -   Generate compliance reports
 
-### 4. **Management Portal** - Trific Leadership
+### 4. **Management Portal** - TRIFIC Leadership
 
-**Who**: Trific executive and operational teams
+**Who**: TRIFIC executive and operational teams
 **Access**: Internal access with administrative privileges  
 **Key Functions**:
 
@@ -249,7 +249,7 @@ For detailed installation instructions: [Installation Guide](/getting-started/in
 
 ---
 
-**Ready to get started?** Choose your role above and begin your Trific Platform journey!
+**Ready to get started?** Choose your role above and begin your TRIFIC Platform journey!
 
 **Need help?** Our support team is available at support@trific.platform or through the in-app chat.
 

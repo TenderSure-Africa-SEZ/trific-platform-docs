@@ -1,6 +1,6 @@
 # User Guides
 
-Comprehensive guides for using the Trific platform.
+Comprehensive guides for using the TRIFIC platform.
 
 ## Available Guides
 

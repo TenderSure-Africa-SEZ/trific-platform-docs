@@ -1,6 +1,6 @@
 # Troubleshooting Common Issues
 
-This guide helps you resolve common issues when setting up and using the Trific Platform. If you don't find your issue here, check our [Support Center](/support/) or contact our support team.
+This guide helps you resolve common issues when setting up and using the TRIFIC Platform. If you don't find your issue here, check our [Support Center](/support/) or contact our support team.
 
 ## Installation & Setup Issues
 
@@ -404,8 +404,8 @@ This guide helps you resolve common issues when setting up and using the Trific 
 
 -   **User Forum**: community.trific.platform
 -   **Developer Discord**: discord.gg/trific-dev
--   **Status Updates**: @TrificPlatform on Twitter
+-   **Status Updates**: @TRIFICSPLATFORM on Twitter
 
 ---
 
-**Still having issues?** Don't hesitate to reach out to our support team. We're here to help you succeed on the Trific Platform!
+**Still having issues?** Don't hesitate to reach out to our support team. We're here to help you succeed on the TRIFIC Platform!

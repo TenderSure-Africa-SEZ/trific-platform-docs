@@ -1,12 +1,12 @@
 # User Roles & Permissions
 
-The Trific Platform is designed around four distinct user roles, each with specific responsibilities, permissions, and access levels. This role-based approach ensures security, efficiency, and an optimal user experience tailored to each user type's needs.
+The TRIFIC Platform is designed around four distinct user roles, each with specific responsibilities, permissions, and access levels. This role-based approach ensures security, efficiency, and an optimal user experience tailored to each user type's needs.
 
 ## Overview of User Roles
 
 ```mermaid
 graph TB
-    subgraph "Trific Platform Users"
+    subgraph "TRIFIC Platform Users"
         A[Clients - Corporate Buyers]
         B[Providers - Service Professionals]
         C[Admin - TenderSure Team]
@@ -96,7 +96,7 @@ graph TB
 
 **User Profile**:
 
--   Trific executive leadership
+-   TRIFIC executive leadership
 -   Platform operations team
 -   Financial operations specialists
 -   Customer success managers

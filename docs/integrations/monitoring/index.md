@@ -1,6 +1,6 @@
 # Monitoring & Observability Integration
 
-Comprehensive platform monitoring and observability integration for the Trific platform.
+Comprehensive platform monitoring and observability integration for the TRIFIC platform.
 
 ## Overview
 

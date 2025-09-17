@@ -1,12 +1,12 @@
 # Platform Integrations
 
-The Trific platform seamlessly integrates with numerous external services and systems to provide a comprehensive, feature-rich marketplace experience. This section documents all integration capabilities, APIs, and third-party service connections.
+The TRIFIC platform seamlessly integrates with numerous external services and systems to provide a comprehensive, feature-rich marketplace experience. This section documents all integration capabilities, APIs, and third-party service connections.
 
 ## Integration Architecture
 
 ```mermaid
 graph TB
-    A[Trific Platform Core] --> B[Integration Layer]
+    A[TRIFIC Platform Core] --> B[Integration Layer]
     B --> C[TenderSure Vetting System]
     B --> D[Payment Gateways]
     B --> E[Messaging Services]

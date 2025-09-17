@@ -1,6 +1,6 @@
 # Pricing
 
-Transparent pricing for the Trific platform services.
+Transparent pricing for the TRIFIC platform services.
 
 ## Pricing Overview
 

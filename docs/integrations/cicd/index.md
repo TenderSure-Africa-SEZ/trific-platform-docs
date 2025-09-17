@@ -1,6 +1,6 @@
 # CI/CD Integration
 
-Continuous integration and deployment pipeline integration for the Trific platform.
+Continuous integration and deployment pipeline integration for the TRIFIC platform.
 
 ## Overview
 

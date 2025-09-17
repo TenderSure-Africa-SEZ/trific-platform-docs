@@ -1,6 +1,6 @@
 # SDKs
 
-Software Development Kits for integrating with the Trific Platform API.
+Software Development Kits for integrating with the TRIFIC Platform API.
 
 ## Available SDKs
 

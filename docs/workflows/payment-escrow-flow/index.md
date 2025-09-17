@@ -4,7 +4,7 @@ Secure payment processing workflow using escrow services to protect both clients
 
 ## Escrow Overview
 
-The payment escrow system provides security and trust for all financial transactions on the Trific platform by holding funds until project milestones are met and both parties are satisfied.
+The payment escrow system provides security and trust for all financial transactions on the TRIFIC platform by holding funds until project milestones are met and both parties are satisfied.
 
 ## Flow Stages
 
