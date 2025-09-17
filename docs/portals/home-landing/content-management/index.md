@@ -1,480 +1,163 @@
-# Landing Page Content Management
+# Content Management - Landing Page
 
-The Trific eCommerce Landing Page content management system handles dynamic content delivery for the public marketplace entry point. This system ensures fast, reliable content updates while maintaining performance and user experience standards.
+Dynamic content management system for the Trific marketplace landing page.
 
-## Content Management Overview
+## Content Modules
 
-### Core Content Modules
+### Core Sections
 
-The landing page consists of essential content modules that must be managed:
+-   **Header** - Navigation and branding
+-   **Hero** - Primary value proposition and CTAs
+-   **Categories** - Featured service categories
+-   **Listings** - Featured providers/services
+-   **Promotions** - Marketing banners and trust badges
+-   **Footer** - Links and policies
 
-1. **Header Module** - Global navigation and branding
-2. **Hero Section** - Primary value proposition and CTAs
-3. **Featured Categories** - Product category showcase
-4. **Featured Listings** - Product/service highlights
-5. **Promotions & Trust Signals** - Marketing banners and trust badges
-6. **Content Blocks** - Value propositions and testimonials
-7. **Footer** - Secondary navigation and policies
+### Content Types
 
-### Content Management Principles
+```typescript
+interface ContentModule {
+	id: string;
+	type: "hero" | "category" | "listing" | "promotion";
+	status: "active" | "draft" | "scheduled";
+	content: ContentData;
+	scheduling?: {
+		startDate: Date;
+		endDate?: Date;
+	};
+}
+```
 
--   **Performance First** - All content changes must maintain Core Web Vitals standards
--   **Resilience** - Content failures should not break the user experience
--   **Accessibility** - All content must meet WCAG 2.1 AA standards
--   **Mobile-First** - Content must work across all device types
+## Content Management
 
-## Content Architecture
-
-### Hero Section Management
+### Hero Section
 
 ```typescript
 interface HeroContent {
 	headline: string; // Primary message
 	subheadline: string; // Supporting text
 	primaryCTA: {
-		label: string; // e.g., "Start Browsing"
-		target: string; // Route/URL - I don't know exact target
-		tracking: string; // Analytics event ID
+		label: string; // "Get Started"
+		target: string; // Route URL
+		analytics: string; // Tracking event
 	};
-	secondaryCTA?: {
-		label: string; // e.g., "Learn More"
-		target: string;
-		tracking: string;
-	};
-	backgroundMedia?: {
-		image: string; // Hero background image
-		video?: string; // Optional hero video
-		alt: string; // Accessibility description
-	};
-	animation?: {
-		enabled: boolean;
-		type: string; // Animation style - I don't know specifics
-	};
+	backgroundImage?: string; // Hero image
 }
 ```
 
-### Featured Categories Management
+### Category Management
 
 ```typescript
-interface CategoryCard {
-	id: string;
-	title: string;
-	description?: string;
-	image: {
-		src: string;
-		alt: string;
-		placeholder: string; // Low-quality placeholder for lazy loading
-	};
-	link: {
-		url: string; // Category results page - I don't know URL pattern
-		params?: Record<string, string>;
-	};
-	displayOrder: number;
-	isActive: boolean;
-	analytics: {
-		trackingId: string;
-		position: number;
-	};
-}
-```
-
-### Featured Listings Management
-
-```typescript
-interface FeaturedListing {
-	id: string;
-	title: string;
-	price?: {
-		amount: number;
-		currency: string; // Currency handling - I don't know format
-		display: string; // Formatted price display
-	};
-	image: {
-		src: string;
-		alt: string;
-		loading: "lazy" | "eager";
-	};
-	rating?: {
-		average: number;
-		count: number;
-	};
-	cta: {
-		label: string; // e.g., "View Details"
-		action: string; // Listing detail route - I don't know pattern
-	};
-	badges?: string[]; // Featured, New, Sale badges
-	displayPriority: number;
-	isVisible: boolean;
-}
-```
-
-### Promotion Banner Management
-
-```typescript
-interface PromotionBanner {
-	id: string;
-	title: string;
-	description: string;
-	image?: string;
-	cta: {
-		label: string;
-		target: string; // Promo landing page - I don't know URL
-	};
-	schedule: {
-		start: Date;
-		end?: Date;
-		timezone: string;
-	};
-	targeting?: {
-		userType?: "new" | "returning";
-		location?: string;
-		device?: "mobile" | "desktop";
-	};
-	displayRules: {
-		position: "top" | "middle" | "bottom";
-		dismissible: boolean;
-		maxViews?: number;
-	};
-}
-```
-
-## Content States Management
-
-### Loading States
-
-```typescript
-interface LoadingStates {
-	hero: {
-		skeleton: boolean; // Show skeleton while loading
-		fallback: HeroContent; // Minimal fallback content
-	};
+interface CategoryContent {
 	categories: {
-		showPlaceholders: boolean;
-		minCards: number; // Minimum cards to show
-	};
-	listings: {
-		lazyLoad: boolean;
-		batchSize: number; // Items per lazy load batch
-		placeholder: string; // Placeholder image
-	};
+		id: string;
+		title: string;
+		description: string;
+		image: string;
+		url: string; // Category page URL
+		featured: boolean; // Show on landing page
+		order: number; // Display order
+	}[];
 }
 ```
 
-### Error States
+### Content States
 
-```typescript
-interface ErrorHandling {
-	hero: {
-		fallback: HeroContent;
-		showRetry: boolean;
-	};
-	categories: {
-		hideOnError: boolean;
-		emptyStateMessage: string;
-	};
-	listings: {
-		retryButton: boolean;
-		errorMessage: string;
-		fallbackContent?: FeaturedListing[];
-	};
-	promotions: {
-		gracefulHide: boolean;
-		expiredHandling: "hide" | "placeholder";
-	};
-}
-```
-
-### Empty States
-
-```typescript
-interface EmptyStates {
-	categories: {
-		show: boolean;
-		message: string;
-		fallbackAction?: {
-			label: string;
-			target: string;
-		};
-	};
-	listings: {
-		show: boolean;
-		message: string;
-		suggestedActions: Array<{
-			label: string;
-			target: string;
-		}>;
-	};
-	promotions: {
-		hideSection: boolean;
-	};
-}
-```
-
-## Content Delivery Strategy
-
-### Performance Requirements
-
--   **Above-the-fold content** must load within performance budgets (**I don't know** exact thresholds)
--   **Lazy loading** for below-the-fold content
--   **Image optimization** with responsive breakpoints
--   **Content chunking** for progressive enhancement
-
-### Caching Strategy
-
-```typescript
-interface CachePolicy {
-	static: {
-		maxAge: number; // Static assets cache duration
-		immutable: boolean;
-	};
-	dynamic: {
-		staleWhileRevalidate: number;
-		maxAge: number; // Dynamic content cache - I don't know duration
-	};
-	api: {
-		categories: number; // Category data cache
-		listings: number; // Listings data cache
-		promotions: number; // Promotion data cache
-	};
-}
-```
-
-### CDN Configuration
-
--   **Global distribution** for fast content delivery
--   **Image optimization** with automatic format selection
--   **Cache invalidation** for content updates
--   **Bandwidth optimization** with adaptive delivery
+-   **Live** - Currently displayed content
+-   **Draft** - Work in progress
+-   **Scheduled** - Future publication
+-   **Archived** - Historical versions
 
 ## Content Workflows
 
-### Content Update Process
+### Publishing Flow
 
-```mermaid
-graph TD
-    A[Content Request] --> B[Content Review]
-    B --> C{Content Type}
-    C -->|Hero/Critical| D[Immediate Review]
-    C -->|Categories| E[Standard Review]
-    C -->|Listings| F[Batch Review]
-    D --> G[Staging Test]
-    E --> G
-    F --> G
-    G --> H{Performance OK?}
-    H -->|No| I[Optimization]
-    H -->|Yes| J[Production Deploy]
-    I --> G
-    J --> K[Live Monitoring]
-```
+1. **Create/Edit** - Content creation and editing
+2. **Review** - Quality assurance check
+3. **Approve** - Content approval process
+4. **Publish** - Make content live
+5. **Monitor** - Track performance
 
-### Emergency Content Updates
-
-1. **Critical Issues** - Immediate content fixes
-2. **Performance Problems** - Content-related performance degradation
-3. **Compliance Issues** - Legal or regulatory content changes
-4. **Security Concerns** - Content that poses security risks
-
-### A/B Testing Framework
-
-```typescript
-interface ContentTesting {
-	testId: string;
-	module: "hero" | "categories" | "listings" | "promotions";
-	variants: Array<{
-		id: string;
-		content: any; // Module-specific content
-		traffic: number; // Percentage of traffic
-	}>;
-	metrics: {
-		primary: string; // Primary success metric
-		secondary: string[]; // Additional metrics
-	};
-	duration: {
-		start: Date;
-		end: Date;
-		minSampleSize: number;
-	};
-}
-```
-
-## Content Quality Assurance
-
-### Pre-Launch Checklist
-
--   [ ] All content modules load without errors
--   [ ] CTAs have valid targets and tracking
--   [ ] Images have proper alt text and loading attributes
--   [ ] No broken links in navigation or footer
--   [ ] Content meets brand guidelines
--   [ ] Performance budgets are met
--   [ ] Mobile responsive display verified
--   [ ] Accessibility standards validated
-
-### Content Validation Rules
+### Content Validation
 
 ```typescript
 interface ValidationRules {
 	hero: {
-		headlineMaxLength: number;
-		ctaRequired: boolean;
-		backgroundImageRequired: boolean;
+		headlineMaxLength: 60; // Characters
+		subheadlineMaxLength: 120; // Characters
+		ctaMaxLength: 20; // Characters
+		imageRequired: true;
 	};
 	categories: {
-		minCategories: number;
-		maxCategories: number;
-		imageRequired: boolean;
-		titleMaxLength: number;
-	};
-	listings: {
-		minListings: number;
-		maxListings: number;
-		priceFormat: RegExp; // Price validation - I don't know format
-		imageRequired: boolean;
-	};
-	promotions: {
-		schedulingRequired: boolean;
-		ctaRequired: boolean;
-		maxActive: number;
+		titleMaxLength: 30;
+		descriptionMaxLength: 80;
+		imageRequired: true;
+		minCategories: 6; // Minimum featured
 	};
 }
 ```
 
-### Performance Monitoring
+## API Integration
 
--   **Core Web Vitals** tracking for all content changes
--   **Error rate monitoring** for content API failures
--   **User engagement metrics** for content effectiveness
--   **Conversion tracking** for CTA performance
-
-## Messaging & Notifications Integration
-
-### Toast Notification Content
-
-```typescript
-interface ToastContent {
-	type: "info" | "success" | "warning" | "error";
-	message: string;
-	duration?: number; // Auto-hide duration
-	dismissible: boolean;
-	actions?: Array<{
-		label: string;
-		handler: () => void;
-	}>;
-	accessibility: {
-		ariaLive: "polite" | "assertive";
-		role: string;
-	};
-}
-```
-
-### System Messaging
-
-The backend messaging system (**ready**) integrates with frontend configuration (**ongoing**) to surface:
-
--   **Error notifications** - API failures and system issues
--   **Informational messages** - Feature announcements and updates
--   **Promotional alerts** - Time-sensitive offers and campaigns
--   **Maintenance notices** - Scheduled downtime communications
-
-### Consent & Privacy Banners
-
-Cookie consent and privacy messaging (**I don't know** if required):
-
-```typescript
-interface ConsentBanner {
-	required: boolean; // Jurisdictional requirement
-	content: {
-		message: string;
-		acceptLabel: string;
-		declineLabel?: string;
-		policyLink: string; // Privacy policy URL - I don't know
-	};
-	behavior: {
-		blocking: boolean; // Block interaction until consent
-		persistent: boolean; // Remember user choice
-		expiry: number; // Consent expiry duration
-	};
-}
-```
-
-## Content Security
-
-### Input Sanitization
-
--   **XSS Prevention** - All content inputs sanitized
--   **CSRF Protection** - Content update endpoints protected
--   **Content Validation** - Schema validation for all content types
--   **Image Security** - Image uploads scanned and validated
-
-### Access Control
-
-```typescript
-interface ContentPermissions {
-	roles: {
-		admin: string[]; // Full content management access
-		editor: string[]; // Content creation and editing
-		reviewer: string[]; // Content approval only
-		viewer: string[]; // Read-only access
-	};
-	modules: {
-		hero: string[]; // Roles that can edit hero
-		categories: string[]; // Roles that can manage categories
-		listings: string[]; // Roles that can feature listings
-		promotions: string[]; // Roles that can create promotions
-	};
-}
-```
-
-### Audit Trail
-
--   **Content Changes** - Track all content modifications
--   **User Attribution** - Record who made changes
--   **Timestamp Tracking** - When changes were made
--   **Rollback Capability** - Ability to revert content changes
-
-## Integration Points
-
-### External Systems
-
--   **Analytics Platform** - Content performance tracking (**I don't know** which platform)
--   **Search Index** - Content searchability updates
--   **CDN** - Content distribution and caching
--   **Monitoring** - Performance and error tracking
-
-### API Endpoints
-
-Content management API endpoints (**I don't know** exact URLs):
+### Content Endpoints
 
 ```typescript
 interface ContentAPI {
-	getHeroContent: () => Promise<HeroContent>;
-	updateHeroContent: (content: HeroContent) => Promise<void>;
-	getFeaturedCategories: () => Promise<CategoryCard[]>;
-	updateCategoryOrder: (ids: string[]) => Promise<void>;
-	getFeaturedListings: () => Promise<FeaturedListing[]>;
-	updateListingPriority: (updates: ListingUpdate[]) => Promise<void>;
-	getPromotions: () => Promise<PromotionBanner[]>;
-	schedulePromotion: (promo: PromotionBanner) => Promise<void>;
+	getHeroContent(): Promise<HeroContent>;
+	getFeaturedCategories(): Promise<CategoryContent>;
+	getPromotions(): Promise<PromotionBanner[]>;
+	updateContent(module: string, content: any): Promise<void>;
 }
 ```
 
-## Troubleshooting Guide
+### Error Handling
 
-### Common Issues
+-   **API Failures** - Show fallback content
+-   **Image Errors** - Display placeholder images
+-   **Validation Errors** - Highlight invalid fields
+-   **Network Issues** - Retry with exponential backoff
 
-**Content not updating:**
+## Performance Considerations
 
--   Check cache invalidation
--   Verify API endpoints are responsive
--   Confirm user permissions
+### Loading Strategy
 
-**Performance degradation:**
+-   **Critical Content** - Load immediately (hero, navigation)
+-   **Secondary Content** - Lazy load below fold
+-   **Images** - Progressive loading with placeholders
+-   **API Calls** - Batch requests when possible
 
--   Review image optimization
--   Check lazy loading implementation
--   Validate caching strategy
+### Caching
 
-**Missing content modules:**
+```typescript
+interface CachePolicy {
+	hero: "15 minutes"; // Dynamic hero content
+	categories: "1 hour"; // Semi-static categories
+	promotions: "5 minutes"; // Time-sensitive promos
+	images: "1 day"; // Static image assets
+}
+```
+
+## Quality Assurance
+
+### Pre-Launch Checklist
+
+-   [ ] All CTAs have valid targets
+-   [ ] Images have alt text
+-   [ ] Mobile responsive
+-   [ ] Performance budgets met
+-   [ ] No broken links
+-   [ ] Accessibility compliance
+
+### Content Validation
+
+-   **Headlines** - Max 60 characters
+-   **Descriptions** - Max 120 characters
+-   **CTAs** - Clear, action-oriented labels
+-   **Images** - Optimized for web, proper dimensions
+
+---
+
+_Next: [Content Pages](../content-pages/) →_
 
 -   Verify API responses
 -   Check error handling implementation

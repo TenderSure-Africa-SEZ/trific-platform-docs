@@ -1,147 +1,103 @@
 # Landing Page Provider Directory Integration
 
-The Provider Directory integration with the Trific eCommerce Landing Page showcases vetted service providers as part of the main marketplace entry experience. This integration supports provider discovery from the landing page while maintaining optimal performance.
+Provider directory integration showcasing vetted service providers on the Trific landing page.
 
-## Landing Page Integration Overview
+## Integration Overview
 
-### Provider Directory Touchpoints
+**Directory Touchpoints:**
 
-The landing page integrates with the provider directory through:
-
-1. **Featured Categories** - Category cards that link to provider results
-2. **Provider Spotlights** - Featured provider showcases on homepage
-3. **Search Integration** - Header search that includes provider results
-4. **Browse CTAs** - Calls-to-action that route to provider directory
-
-### Integration Architecture
+-   Featured categories: Links to provider category filters
+-   Provider spotlights: Featured provider showcases
+-   Search integration: Header search includes providers
+-   Browse CTAs: Navigation to full directory
 
 ```typescript
 interface ProviderDirectoryIntegration {
 	landingPageComponents: {
-		featuredCategories: CategoryCard[]; // Links to provider categories
-		providerSpotlights: ProviderTeaser[]; // Featured provider showcases
-		headerSearch: SearchIntegration; // Provider search capability
-		browseCTAs: DirectoryAction[]; // Navigation to full directory
+		featuredCategories: CategoryCard[];
+		providerSpotlights: ProviderTeaser[];
+		headerSearch: SearchIntegration;
+		browseCTAs: DirectoryAction[];
 	};
-
 	performanceRequirements: {
-		lazyLoading: boolean; // Lazy load provider content
-		caching: CachePolicy; // Provider data caching
-		fallbacks: FallbackContent; // Error state handling
-		accessibility: A11yRequirements; // Accessibility standards
+		lazyLoading: boolean;
+		caching: CachePolicy;
+		fallbacks: FallbackContent;
 	};
 }
 ```
 
-## Directory Structure
+## Featured Categories
 
-## Featured Categories Integration
-
-### Category Card Display
-
-Category cards on the landing page link to filtered provider directory views:
+**Category Card Integration:**
 
 ```typescript
 interface CategoryToDirectoryLink {
 	categoryCard: {
 		id: string;
-		title: string; // Category display name
-		description?: string; // Category description
-		image: CategoryImage; // Category visual
-		providerCount: number; // Number of providers in category
+		title: string;
+		description?: string;
+		image: CategoryImage;
+		providerCount: number;
 	};
-
 	linkTarget: {
-		url: string; // Provider directory URL - I don't know exact pattern
+		url: string; // Provider directory URL
 		filters: {
-			category: string; // Pre-applied category filter
-			location?: string; // Optional location context
-			sortBy: "rating" | "recent"; // Default sort order
+			category: string; // Pre-applied filter
+			sortBy: "rating" | "recent"; // Default sort
 		};
 		tracking: {
-			event: "category_card_click"; // Analytics event
-			category_id: string; // Category identifier
-			position: number; // Card position on page
+			event: "category_card_click";
+			category_id: string;
+			position: number;
 		};
 	};
 }
 ```
-
-### Category Performance Requirements
 
 **Loading Strategy:**
 
--   **Above-fold categories** - Load immediately with hero section
--   **Below-fold categories** - Lazy load as user scrolls
--   **Category images** - Optimized with responsive breakpoints
--   **Provider counts** - Cached data with periodic updates
+-   Above-fold categories: Load with hero section
+-   Below-fold categories: Lazy load on scroll
+-   Provider counts: Cached with periodic updates
+-   Error handling: Graceful fallbacks for API failures
 
-**Error Handling:**
+## Provider Spotlights
 
-```typescript
-interface CategoryErrorHandling {
-	apiFailure: {
-		showPlaceholder: boolean; // Show category card without count
-		fallbackImage: string; // Generic category image
-		disableLink: boolean; // Disable broken links
-	};
-
-	imageFailure: {
-		placeholder: string; // Category placeholder image
-		altText: string; // Accessibility description
-		maintainLayout: boolean; // Prevent layout shift
-	};
-
-	countFailure: {
-		hideCount: boolean; // Hide provider count on error
-		showGeneric: boolean; // Show "Browse" instead of count
-	};
-}
-```
-
-## Provider Spotlights Integration
-
-### Featured Provider Display
-
-Landing page showcases selected providers to build trust and demonstrate quality:
+**Featured Provider Display:**
 
 ```typescript
 interface ProviderSpotlight {
 	provider: {
 		id: string;
 		businessName: string;
-		displayName: string;
-		logo: string; // Provider logo image
-		specialization: string[]; // Key service areas
-		location: string; // Primary location
+		logo: string;
+		specialization: string[];
+		location: string;
 		rating: {
-			average: number; // Provider rating
-			reviewCount: number; // Number of reviews
+			average: number;
+			reviewCount: number;
 		};
 	};
-
 	spotlight: {
-		tagline: string; // Marketing tagline
-		description: string; // Brief provider description
-		featuredImage?: string; // Showcase image
-		trustIndicators: TrustBadge[]; // Verification badges
+		tagline: string;
+		description: string;
+		featuredImage?: string;
+		trustIndicators: TrustBadge[];
 	};
-
 	engagement: {
 		cta: {
-			label: string; // "View Provider" or similar
-			target: string; // Provider profile URL - I don't know pattern
+			label: string; // "View Provider"
+			target: string; // Provider profile URL
 		};
 		tracking: {
 			event: "provider_spotlight_click";
 			provider_id: string;
-			position: number; // Spotlight position
+			position: number;
 		};
 	};
 }
 ```
-
-### Spotlight Content Management
 
 **Selection Criteria:**
 
@@ -150,234 +106,88 @@ interface ProviderSpotlight {
 -   Diverse service category representation
 -   Geographic distribution consideration
 
-**Content Requirements:**
-
-```typescript
-interface SpotlightContentRules {
-	provider: {
-		minimumRating: number; // Minimum required rating
-		minimumReviews: number; // Minimum review count
-		verificationRequired: boolean; // Must be verified provider
-		activeStatus: boolean; // Currently accepting work
-	};
-
-	content: {
-		taglineMaxLength: number; // Character limit for tagline
-		descriptionMaxLength: number; // Character limit for description
-		imageRequired: boolean; // Require featured image
-		logoRequired: boolean; // Require provider logo
-	};
-
-	display: {
-		maxSpotlights: number; // Maximum spotlights on page
-		rotationSchedule?: string; // Automatic rotation schedule
-		priority: "rating" | "manual"; // Selection method
-	};
-}
-```
-
 ## Search Integration
 
-### Header Search Provider Integration
-
-The landing page header search includes provider results alongside product/service searches:
+**Header Search Provider Results:**
 
 ```typescript
 interface SearchIntegration {
 	searchTypes: {
 		unified: boolean; // Single search for all content
-		tabbed: boolean; // Separate tabs for providers/products
+		tabbed: boolean; // Separate provider/product tabs
 		filtered: boolean; // Filter options in results
 	};
-
 	providerResults: {
-		includedInMainSearch: boolean; // Mix providers with other results
+		includedInMainSearch: boolean;
 		separateSection: boolean; // Dedicated provider section
-		maxResults: number; // Maximum providers in search results
-		resultFormat: "card" | "list"; // Provider result display format
+		maxResults: number; // Max providers in results
+		resultFormat: "card" | "list";
 	};
-
 	searchFeatures: {
-		typeahead: boolean; // Auto-suggest provider names
-		locationAware: boolean; // Prioritize local providers
-		categoryFilter: boolean; // Filter by provider categories
-		ratingFilter: boolean; // Filter by provider ratings
+		autocomplete: boolean; // Provider name suggestions
+		categoryFilter: boolean; // Filter by service category
+		locationFilter: boolean; // Geographic filtering
 	};
 }
 ```
 
-### Search Performance
+## Performance & Analytics
 
-**Provider Search Optimization:**
+**Caching Strategy:**
+
+-   Provider data: 30 minutes cache
+-   Category counts: 1 hour cache
+-   Search results: 15 minutes cache
+-   Images: 24 hours cache with CDN
+
+**Analytics Tracking:**
 
 ```typescript
-interface ProviderSearchPerformance {
-	caching: {
-		searchIndex: {
-			duration: number; // Search index cache duration - I don't know
-			updateStrategy: "incremental" | "full";
+interface ProviderDirectoryAnalytics {
+	events: {
+		category_card_click: {
+			category_id: string;
+			position: number;
+			provider_count: number;
 		};
-
-		results: {
-			duration: number; // Search results cache
-			userSpecific: boolean; // Personalized result caching
+		provider_spotlight_click: {
+			provider_id: string;
+			position: number;
+			rating: number;
 		};
-	};
-
-	performance: {
-		responseTime: number; // Maximum search response time - I don't know target
-		debouncing: {
-			delay: number; // Input debounce delay (300ms)
-			minQuery: number; // Minimum search query length (2)
-		};
-		pagination: {
-			initialResults: number; // First page result count
-			lazyLoad: boolean; // Load more results on scroll
+		search_provider_result_click: {
+			query: string;
+			provider_id: string;
+			result_position: number;
 		};
 	};
 }
 ```
 
-## Browse CTAs Integration
+**Performance Monitoring:**
 
-### Directory Navigation Actions
+-   Category load time tracking
+-   Provider spotlight render time
+-   Search response time measurement
+-   Error rate monitoring for API calls
 
-Landing page CTAs that direct users to the provider directory:
+---
 
-```typescript
-interface DirectoryNavigationCTAs {
-	heroCTA: {
-		primary: {
-			label: string; // "Start Browsing" - I don't know exact label
-			target: string; // Main provider directory URL
-			tracking: "hero_cta_primary";
-		};
-		secondary?: {
-			label: string; // "Find Providers" - I don't know exact label
-			target: string; // Provider directory or category page
-			tracking: "hero_cta_secondary";
-		};
-	};
+_Next: [SEO Features](../seo-features/) →_
+preload: boolean; // Preload common suggestions
+caching: CachePolicy;
+};
+};
 
-	sectionCTAs: {
-		afterCategories: DirectoryCTA; // CTA after category section
-		afterSpotlights: DirectoryCTA; // CTA after provider spotlights
-		footerCTA: DirectoryCTA; // Final directory CTA
-	};
+    dataConsistency: {
+    	providerStatus: "realtime" | "cached"; // Provider availability updates
+    	ratings: "realtime" | "cached"; // Rating and review updates
+    	inventory: "realtime" | "cached"; // Service availability
+    };
+
 }
 
-interface DirectoryCTA {
-	label: string;
-	target: string; // Directory URL with context
-	context?: {
-		utm_source: "landing_page";
-		utm_medium: "cta";
-		utm_campaign: string; // Specific campaign tracking
-	};
-	styling: {
-		variant: "primary" | "secondary" | "outline";
-		size: "small" | "medium" | "large";
-	};
-}
-```
-
-## Provider Directory Routes
-
-### URL Structure Integration
-
-**Landing Page to Directory Navigation:**
-
-```typescript
-interface DirectoryRoutingIntegration {
-	routes: {
-		main: string; // "/providers" - I don't know exact route
-		category: string; // "/providers/category/{slug}"
-		search: string; // "/providers/search?q={query}"
-		location: string; // "/providers/location/{area}"
-		provider: string; // "/provider/{id}" or "/provider/{slug}"
-	};
-
-	parameters: {
-		category: {
-			slug: string; // Category URL slug
-			filters?: ProviderFilter[]; // Additional filters
-			sort?: SortOption; // Default sort order
-		};
-		search: {
-			query: string; // Search query
-			type?: "provider" | "service"; // Search type
-			location?: string; // Location filter
-		};
-		referral: {
-			source: "landing_page"; // Traffic source tracking
-			campaign?: string; // Campaign identifier
-			position?: number; // Element position on landing
-		};
-	};
-}
-```
-
-### Navigation Context Preservation
-
-**User Journey Tracking:**
-
-```typescript
-interface NavigationContext {
-	landingPageContext: {
-		entryPoint: "hero" | "category" | "spotlight" | "search";
-		userIntent: "browse" | "search" | "specific_provider";
-		previousInteractions: UserAction[];
-	};
-
-	directoryPreferences: {
-		preferredLocation?: string; // Inferred or selected location
-		preferredCategories?: string[]; // Interest indicators
-		priceRange?: PriceRange; // Budget preferences
-	};
-
-	personalization: {
-		returningUser: boolean; // Previous visitor identification - I don't know if implemented
-		savedPreferences?: UserPreferences; // Stored user preferences
-		behaviorSignals: BehaviorData; // User interaction patterns
-	};
-}
-```
-
-## Data Integration & APIs
-
-### Provider Data Sources
-
-**API Integration:**
-
-```typescript
-interface ProviderDataIntegration {
-	landingPageAPIs: {
-		featuredProviders: {
-			endpoint: string; // Featured provider API - I don't know URL
-			caching: CachePolicy;
-			fallback: FallbackProvider[];
-		};
-
-		categoryProviderCounts: {
-			endpoint: string; // Category statistics API
-			updateFrequency: string; // "hourly" | "daily"
-			caching: CachePolicy;
-		};
-
-		searchSuggestions: {
-			endpoint: string; // Provider search suggestions
-			preload: boolean; // Preload common suggestions
-			caching: CachePolicy;
-		};
-	};
-
-	dataConsistency: {
-		providerStatus: "realtime" | "cached"; // Provider availability updates
-		ratings: "realtime" | "cached"; // Rating and review updates
-		inventory: "realtime" | "cached"; // Service availability
-	};
-}
-```
+````
 
 ### Content Synchronization
 
@@ -404,7 +214,7 @@ interface ProviderContentSync {
 		graceful: boolean; // Avoid breaking user experience
 	};
 }
-```
+````
 
 ## Performance Considerations
 

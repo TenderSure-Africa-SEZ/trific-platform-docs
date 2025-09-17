@@ -134,6 +134,9 @@ docs/.vitepress/cache
 docs/.vitepress/dist
 .temp/
 
+# Trific docs
+docs/trific-docs
+
 # OS generated files
 .DS_Store
 .DS_Store?
