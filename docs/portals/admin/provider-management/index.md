@@ -1,12 +1,12 @@
-# Provider Management
+# Service Provider Management
 
 Comprehensive provider lifecycle management system for TRIFIC platform administrators to oversee provider vetting, performance monitoring, compliance enforcement, and relationship management.
 
-## Provider Lifecycle Management
+## Service Provider Lifecycle Management
 
 The provider management system handles the complete provider journey from initial application through ongoing performance monitoring and potential off-boarding.
 
-### Provider Application Process
+### Service Provider Application Process
 
 **Initial Application Review**
 
@@ -66,13 +66,6 @@ Minimum Passing Score: 75/100
 -   Financial background and credit verification
 -   Professional license and certification validation
 -   Previous employment and reference verification
-
-**Risk Assessment Matrix**
-
--   Low Risk: Standard approval process
--   Medium Risk: Enhanced review and monitoring
--   High Risk: Executive review required or rejection
--   Critical Risk: Automatic rejection with appeal option
 
 ## Provider Account Management
 
@@ -140,10 +133,7 @@ Provider Performance Dashboard:
 
 **Work Quality Assessment**
 
--   Project deliverable quality evaluation
 -   Client feedback and rating analysis
--   Quality improvement tracking and trends
--   Best practice identification and sharing
 
 **Compliance Performance Tracking**
 
@@ -260,7 +250,6 @@ Provider Financial Metrics:
 **Financial Compliance Monitoring**
 
 -   Tax compliance and reporting requirements
--   Anti-money laundering (AML) monitoring
 -   Know Your Customer (KYC) compliance
 -   Financial reporting and audit preparation
 
