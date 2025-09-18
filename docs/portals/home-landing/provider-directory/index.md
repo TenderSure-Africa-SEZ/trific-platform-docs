@@ -1,6 +1,6 @@
 # Landing Page Provider Directory Integration
 
-Provider directory integration showcasing vetted service providers on the Trific landing page.
+Provider directory integration showcasing vetted service providers on the TRIFIC landing page.
 
 ## Integration Overview
 

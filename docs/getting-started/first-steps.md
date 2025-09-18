@@ -11,7 +11,7 @@ Before diving in, it's important to understand which portal you'll primarily be 
 -   **Client Portal** - For companies looking to hire service providers
 -   **Provider Portal** - For service providers seeking work opportunities
 -   **Admin Portal** - For TenderSure staff managing provider vetting
--   **Management Portal** - For Trific leadership overseeing platform operations
+-   **Management Portal** - For TRIFIC leadership overseeing platform operations
 
 ## Initial Setup Tasks
 

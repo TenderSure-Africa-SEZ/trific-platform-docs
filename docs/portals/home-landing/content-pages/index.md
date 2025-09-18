@@ -1,6 +1,6 @@
 # Content Pages - Landing Page
 
-Content requirements and structure for the Trific marketplace landing page.
+Content requirements and structure for the TRIFIC marketplace landing page.
 
 ## Content Structure
 

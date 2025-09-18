@@ -1,6 +1,6 @@
 # Performance - Landing Page
 
-Performance requirements and optimization for the Trific marketplace landing page.
+Performance requirements and optimization for the TRIFIC marketplace landing page.
 
 ## Performance Targets
 

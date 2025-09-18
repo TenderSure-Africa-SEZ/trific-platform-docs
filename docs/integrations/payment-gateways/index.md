@@ -6,7 +6,7 @@ The TRIFIC platform integrates with multiple payment gateways to provide secure,
 
 ```mermaid
 graph TB
-    A[Trific Payment Engine] --> B[Payment Gateway Orchestrator]
+    A[TRIFIC Payment Engine] --> B[Payment Gateway Orchestrator]
     B --> C[Primary Gateway - Stripe]
     B --> D[Secondary Gateway - PayPal]
     B --> E[Regional Gateways]

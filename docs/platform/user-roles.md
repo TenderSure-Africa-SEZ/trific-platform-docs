@@ -10,7 +10,7 @@ graph TB
         A[Clients - Corporate Buyers]
         B[Providers - Service Professionals]
         C[Admin - TenderSure Team]
-        D[Management - Trific Team]
+        D[Management - TRIFIC Team]
     end
 
     subgraph "Access Levels"
@@ -90,7 +90,7 @@ graph TB
 -   Maintain quality standards and thresholds
 -   Generate compliance and performance reports
 
-### 4. Management Users (Trific Team)
+### 4. Management Users (TRIFIC Team)
 
 **Primary Purpose**: Internal platform operators and executives
 
@@ -245,7 +245,7 @@ interface AdminPermissions {
 }
 ```
 
-### Management Permissions (Trific)
+### Management Permissions (TRIFIC)
 
 ```typescript
 interface ManagementPermissions {

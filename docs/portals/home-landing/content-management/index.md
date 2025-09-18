@@ -1,6 +1,6 @@
 # Content Management - Landing Page
 
-Dynamic content management system for the Trific marketplace landing page.
+Dynamic content management system for the TRIFIC marketplace landing page.
 
 ## Content Modules
 

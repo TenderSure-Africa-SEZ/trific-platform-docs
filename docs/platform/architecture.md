@@ -162,7 +162,7 @@ Each portal is built as a separate application with shared components:
 -   Compliance reporting
 -   Bulk operations interface
 
-**Management Portal (Trific)**
+**Management Portal (TRIFIC)**
 
 -   Executive dashboard with KPIs
 -   Financial operations management

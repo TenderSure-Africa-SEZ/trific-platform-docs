@@ -6,16 +6,16 @@ The TRIFIC Platform is a revolutionary curated marketplace that transforms how b
 
 **"Connecting excellence with opportunity through trusted partnerships"**
 
-Trific eliminates the inefficiencies of traditional bidding marketplaces by creating a curated ecosystem where:
+TRIFIC eliminates the inefficiencies of traditional bidding marketplaces by creating a curated ecosystem where:
 
 -   **Quality is guaranteed** through comprehensive vetting
 -   **Efficiency is maximized** through direct engagement
 -   **Trust is built-in** through secure transactions and continuous monitoring
 -   **Growth is supported** through ongoing professional development
 
-## What Makes Trific Different
+## What Makes TRIFIC Different
 
-### Traditional Marketplaces vs. Trific
+### Traditional Marketplaces vs. TRIFIC
 
 | Traditional Platforms | TRIFIC Platform                 |
 | --------------------- | ------------------------------- |

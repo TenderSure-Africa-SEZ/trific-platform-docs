@@ -7,7 +7,7 @@ Landing page SEO optimization and search engine visibility requirements.
 **Essential Meta Tags:**
 
 ```html
-<title>Professional Services Marketplace - Trific</title>
+<title>Professional Services Marketplace - TRIFIC</title>
 <meta
 	name="description"
 	content="Find verified professionals for your projects"
@@ -17,7 +17,7 @@ Landing page SEO optimization and search engine visibility requirements.
 <!-- Open Graph -->
 <meta
 	property="og:title"
-	content="Trific - Professional Services Marketplace"
+	content="TRIFIC - Professional Services Marketplace"
 />
 <meta property="og:description" content="Connect with verified professionals" />
 <meta property="og:image" content="/og-image.jpg" />
@@ -30,7 +30,7 @@ Landing page SEO optimization and search engine visibility requirements.
 {
 	"@context": "https://schema.org",
 	"@type": "Marketplace",
-	"name": "Trific",
+	"name": "TRIFIC",
 	"description": "Professional services marketplace",
 	"url": "https://trific.com",
 	"sameAs": [
@@ -109,7 +109,7 @@ interface SEOConfig {
 Feature: SEO optimization
   Scenario: Meta tags render correctly
     Given I visit the landing page
-    Then title tag should contain "Trific"
+    Then title tag should contain "TRIFIC"
     And meta description should be present
     And Open Graph tags should be complete
 

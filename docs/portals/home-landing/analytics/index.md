@@ -1,6 +1,6 @@
 # Analytics - Landing Page
 
-PostHog-powered analytics and tracking for the Trific landing page.
+PostHog-powered analytics and tracking for the TRIFIC landing page.
 
 ## PostHog Setup
 

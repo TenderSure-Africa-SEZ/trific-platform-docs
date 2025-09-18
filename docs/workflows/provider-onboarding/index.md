@@ -1,6 +1,6 @@
 # Provider Onboarding
 
-Comprehensive onboarding workflow for service providers joining the TRIFIC platform.
+Comprehensive onboarding workflow for Service Providers joining the TRIFIC platform.
 
 ## Onboarding Overview
 
