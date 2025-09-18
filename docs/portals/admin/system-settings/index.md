@@ -142,10 +142,7 @@ Authorization Settings:
 
 **Theme and Branding Management**
 
--   Platform branding and visual identity settings
--   Custom CSS and styling configuration management
 -   Logo and brand asset management system
--   White-label customization and client branding options
 
 **User Experience Optimization**
 

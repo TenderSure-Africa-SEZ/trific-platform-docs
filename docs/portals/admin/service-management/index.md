@@ -20,7 +20,7 @@ The service management system provides centralized oversight of all service offe
 ```
 Service Category Framework:
 Primary Categories:
-- Technology & Development (Web, Mobile, Software)
+- Technology & Development (Web, Software)
 - Creative & Design (Graphics, Marketing, Branding)
 - Business Services (Consulting, Operations, Strategy)
 - Digital Marketing (SEO, Social Media, Advertising)

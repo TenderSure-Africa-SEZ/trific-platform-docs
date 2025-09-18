@@ -187,13 +187,15 @@ The backend follows Domain-Driven Design (DDD) principles with bounded contexts:
 - Account verification and KYC
 
 // API endpoints
-GET    /api/users/profile
-PUT    /api/users/profile
-POST   /api/users/verify
-GET    /api/users/permissions
-POST   /api/auth/login
-POST   /api/auth/logout
-POST   /api/auth/refresh
+GET    /api/v1/client/profile
+PUT    /api/v1/service-provider/profile
+GET    /api/v1/client/profile
+PUT    /api/v1/client/profile
+POST   /api/v1/users/verify
+GET    /api/v1/users/permissions
+POST   /api/v1/authentication/login
+POST   /api/v1/authentication/logout
+POST   /api/v1/auauthenticationth/refresh
 ```
 
 **Provider Service**

@@ -427,8 +427,8 @@ And configuration changes should be logged for audit
 
 ```javascript
 describe("Admin Authentication", () => {
-	test("POST /api/admin/auth/login - Admin login with MFA", async () => {
-		const response = await request(app).post("/api/admin/auth/login").send({
+	test("POST /api/v1/authentication/token/ - Admin login with MFA", async () => {
+		const response = await request(app).post("/api/v1/authentication/token/").send({
 			email: "admin-test@example.com",
 			password: "AdminPassword123",
 			mfaToken: "123456",
