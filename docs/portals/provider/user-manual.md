@@ -23,15 +23,13 @@ This comprehensive guide walks through every aspect of using the TRIFIC Service 
 
 1. **Access Registration**
 
-    - Navigate to TRIFIC provider registration page
-    - Click "Join as Service Provider"
-    - Select your provider type (Individual/Firm)
+    - Navigate to TRIFIC landing page
+    - Click "Join" to navigate to the registration page
+    - Select register as Service Provider
 
 2. **Initial Information**
 
     - Complete basic business information
-    - Choose primary service categories
-    - Set preliminary availability status
 
 3. **Email Verification**
     - Check inbox for verification email
@@ -53,11 +51,12 @@ The onboarding process consists of four main phases:
 -   Submit KYV (Know Your Vendor) documents
 -   Upload business registration certificates
 -   Provide professional licenses and certifications
+-   Provide portfolio and rate card
 
 **Phase 3: Vetting Fee Payment**
 
 -   Process required vetting fee (varies by provider type)
--   Choose payment method (card, mobile money, bank transfer)
+-   Choose payment method (card, mobile money)
 -   Receive payment confirmation and receipt
 
 **Phase 4: Review & Approval**
@@ -79,6 +78,7 @@ The onboarding process consists of four main phases:
 -   Contracts: Active projects and deliverables
 -   Messages: Client communications
 -   Wallet: Earnings and payment management
+-   Users & Roles: Users, roles and privileges management
 -   Profile: Portfolio and account settings
 
 **Key Metrics Panel**
@@ -101,21 +101,6 @@ The onboarding process consists of four main phases:
 -   Contract updates
 -   Payment notifications
 -   System announcements
-
-### Dashboard Customization
-
-1. **Widget Management**
-
-    - Click "Customize Dashboard" in top-right
-    - Drag widgets to reorder priority
-    - Toggle widget visibility on/off
-    - Save layout preferences
-
-2. **Notification Settings**
-    - Access via gear icon in header
-    - Configure email notification preferences
-    - Set in-app alert frequencies
-    - Customize mobile push notifications
 
 ---
 

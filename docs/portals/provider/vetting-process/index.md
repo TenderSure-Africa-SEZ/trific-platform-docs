@@ -17,14 +17,14 @@ TRIFIC maintains a curated marketplace of high-quality service providers through
 
 **Individual Providers**
 
--   Minimum 3 years relevant professional experience
+-   Minimum years relevant professional experience (TBA)
 -   Current professional license or certification in service area
 -   Demonstrated expertise through work samples or case studies
 -   Professional references from previous clients or employers
 
 **Business Entities (Firms)**
 
--   Established business registration (minimum 2 years)
+-   Established business registration (minimum years TBA)
 -   Professional liability insurance coverage
 -   Qualified key personnel with relevant expertise
 -   Financial stability and business sustainability

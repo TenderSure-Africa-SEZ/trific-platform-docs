@@ -48,12 +48,6 @@ The Service Provider Portal allows vetted providers to:
 -   **Key Features:** Questionnaire completion, document submission, vetting fee payment
 -   **Content:** KYV/KYB requirements, verification status tracking
 
-### [Vetting Process](vetting-process/)
-
--   **Purpose:** Submit credentials and complete platform vetting
--   **Key Features:** Document verification, credibility assessment, approval workflow
--   **Content:** Vetting criteria, submission guidelines, approval timelines
-
 ### [Profile Management](profile-management/)
 
 -   **Purpose:** Manage service offerings, portfolio, and business information
@@ -95,7 +89,7 @@ The Service Provider Portal allows vetted providers to:
 ### Provider Onboarding Process
 
 1. **Account Creation:** Complete initial registration form
-2. **Document Submission:** Upload KYV/KYB verification documents
+2. **Document Submission:** Upload KYV/KYB verification documents, professional background, portfolio & rate card
 3. **Vetting Fee Payment:** Process required vetting fee
 4. **Review Process:** TRIFIC team reviews application
 5. **Approval Notification:** Provider gains platform access
@@ -106,7 +100,6 @@ The Service Provider Portal allows vetted providers to:
 2. **Skills Documentation:** Add expertise areas and certifications
 3. **Rate Card Setup:** Define service pricing and terms
 4. **Reference Upload:** Add client testimonials and case studies
-5. **Portfolio Optimization:** Enhance visibility for client matching
 
 ### Job Application Workflow
 
@@ -137,7 +130,7 @@ The Service Provider Portal allows vetted providers to:
 
 ## Security & Privacy Features
 
--   **Document Encryption:** KYV/KYB documents secured with AES encryption
+-   **Document Encryption:** KYV/KYB documents secured at rest with AES encryption
 -   **Secure Communications:** All messaging and contract documents encrypted
 -   **Access Control:** Role-based permissions for different provider types
 -   **Data Protection:** Compliance with privacy regulations and data retention policies
