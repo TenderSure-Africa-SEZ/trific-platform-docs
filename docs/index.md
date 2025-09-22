@@ -53,6 +53,10 @@ features:
       title: Global Marketplace
       details: Access to vetted service providers across multiple industries and geographic regions with local expertise.
       link: /platform/architecture
+    - icon: 🛠️
+      title: Development Features & Tasks
+      details: Standardized templates and tracking for development features following specification-driven development principles.
+      link: /development-features
 ---
 
 ## Choose Your Path
@@ -74,7 +78,8 @@ Select the documentation path that matches your role and needs:
 ::: info For Developers & Integrators
 **API Integration?** Start with [API Documentation →](/api/)  
 **Building custom solutions?** Check [Technical Architecture →](/technical/)  
-**Need code examples?** Browse [SDK Documentation →](/api/sdks)
+**Need code examples?** Browse [SDK Documentation →](/api/sdks)  
+**Development features & tasks?** View [Development Features Template →](/development-features)
 :::
 
 ::: danger For Administrators
