@@ -1,17 +1,17 @@
-# Provider Onboarding Guide
+# Service Provider Onboarding Guide
 
-The TRIFIC provider onboarding process ensures that all service providers meet platform standards and are properly verified before serving clients.
+The TRIFIC Service Provider onboarding process ensures that all Service Provider meet platform standards and are properly verified before serving clients.
 
 ## Onboarding Overview
 
-The provider onboarding consists of four key phases designed to verify credentials, assess capabilities, and integrate new providers into the TRIFIC ecosystem.
+The Service Provider onboarding consists of four key phases designed to verify credentials, assess capabilities, and integrate new providers into the TRIFIC ecosystem.
 
 ### Phase 1: Registration & Basic Information
 
 **Account Setup**
 
--   Create provider account with business email
--   Select provider type (Individual, Firm, Enterprise)
+-   Create Service Provider account with business email
+-   Select Service Provider type (Individual, Firm, Enterprise)
 -   Complete basic business information form
 -   Verify email address and set secure password
 
@@ -70,10 +70,7 @@ The provider onboarding consists of four key phases designed to verify credentia
 
 **Vetting Fee Structure**
 
--   Individual Providers: $99 USD
--   Small Firms (2-10 employees): $199 USD
--   Medium Firms (11-50 employees): $399 USD
--   Large Firms (51+ employees): $799 USD
+-   All Service Providers: 1000 KES
 
 **Payment Options**
 
