@@ -79,7 +79,9 @@ The onboarding process consists of four main phases:
 -   Messages: Client communications
 -   Wallet: Earnings and payment management
 -   Users & Roles: Users, roles and privileges management
+-   Vetting: Verification of Service Provider documents
 -   Profile: Portfolio and account settings
+-   Logout: Logout from the system
 
 **Key Metrics Panel**
 
@@ -87,20 +89,6 @@ The onboarding process consists of four main phases:
 -   Active Contracts count
 -   Completion Rate percentage
 -   Client Rating average
-
-**Quick Action Cards**
-
--   Apply to Featured Jobs
--   Update Portfolio
--   Check Messages
--   Request Withdrawal
-
-**Recent Activity Feed**
-
--   New job matches
--   Contract updates
--   Payment notifications
--   System announcements
 
 ---
 
@@ -110,17 +98,26 @@ The onboarding process consists of four main phases:
 
 **Basic Information**
 
--   Business name and registration details
--   Contact information and location
--   Tax identification numbers
--   Business category and subcategories
+-   Bio & Personal Introduction -- Write a professional summary
+-   Avatar/Profile Picture -- Upload a clear and professional image
+-   Skills & Categories -- Select relevant skills and service categories
+-   Service Description & Rates -- Define your service offerings with hourly or project rates
+
+**Portfolio**
+
+-   Portfolio/Projects Showcase -- Add images, links, and detailed descriptions of past work
+
+**Services**
+
+-   Set hourly rates by service type
+-   Define project minimums
+-   Offer package pricing options
+-   Include discount structures
 
 **Security Settings**
 
 -   Password management and requirements
 -   Two-factor authentication setup
--   Login session management
--   Security question configuration
 
 **Privacy Controls**
 
@@ -129,7 +126,7 @@ The onboarding process consists of four main phases:
 -   Data sharing permissions
 -   Marketing communication opt-outs
 
-### Verification Management
+### Vetting
 
 **Document Status Tracking**
 
