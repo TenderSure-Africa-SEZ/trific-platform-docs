@@ -920,7 +920,7 @@ But cannot edit or delete any content
 | -------- | ------------------------------------------------------------------- | ----------- | ------ | --------- | ------------------------------------------------------------- | ------ | ------------- |
 | TASK-100 | Define API contracts (threads, messages, attachments)               | BE          | S      | —         | `contracts/messaging.yml`                                     | \[P]   | CRIT-050..054 |
 | TASK-101 | Contract tests for messaging endpoints                              | QA/BE       | S      | T100      | `tests/contracts/test_messaging.py`                           | \[S]   | CRIT-050..054 |
-| TASK-102 | Implement `POST /threads` & thread creation logic                   | BE          | 1 hr   | T101      | `apps/messaging/threads.py`                                   | \[S]   | CRIT-050      |
+| TASK-102 | Implement `POST /threads` & thread creation logic                   | BE          | 2 hrs  | T101      | `apps/messaging/threads.py`                                   | \[S]   | CRIT-050      |
 | TASK-103 | Implement `POST /threads/{id}/messages` + WebSocket push            | BE          | 1 hr   | T101      | `apps/messaging/messages.py`                                  | \[S]   | CRIT-051      |
 | TASK-104 | Implement `POST /threads/{id}/attachments` w/ S3 upload + scan      | BE          | 1 hr   | T101      | `apps/messaging/attachments.py`                               | \[S]   | CRIT-052      |
 | TASK-105 | Implement `GET /threads/{id}` (history, metadata)                   | BE          | 1 hr   | T101      | `apps/messaging/threads.py`                                   | \[S]   | CRIT-051..053 |
@@ -1276,8 +1276,8 @@ Then I see the type, recipient, channel, and status
 | -------- | ---------------------------------------------------------- | ----------- | ------ | --------- | --------------------------------------------------------------------- | ------ | ------------- |
 | TASK-140 | Define notification API contracts                          | BE          | S      | —         | `contracts/notifications.yml`                                         | \[P]   | CRIT-070..074 |
 | TASK-141 | Contract tests for notification endpoints                  | QA/BE       | S      | T140      | `tests/contracts/test_notifications.py`                               | \[S]   | CRIT-070..074 |
-| TASK-142 | Implement `POST /notifications` (create + channel routing) | BE          | 2 hrs  | T141      | `apps/notifications/service.py`                                       | \[S]   | CRIT-070..072 |
-| TASK-143 | Implement in-app WS push (Channels/Redis)                  | BE          | 1 hr   | T141      | `apps/notifications/realtime.py`                                      | \[S]   | CRIT-070      |
+| TASK-142 | Implement `POST /notifications` (create + channel routing) | BE          | 4 hrs  | T141      | `apps/notifications/service.py`                                       | \[S]   | CRIT-070..072 |
+| TASK-143 | Implement in-app WS push (Channels/Redis)                  | BE          | 3 hrs   | T141      | `apps/notifications/realtime.py`                                      | \[S]   | CRIT-070      |
 | TASK-144 | Implement email & push delivery workers                    | BE          | 1 hr   | T141      | `apps/notifications/delivery.py`                                      | \[S]   | CRIT-071      |
 | TASK-145 | Implement `GET /notifications` + `PATCH /preferences`      | BE          | 1 hr   | T141      | `apps/notifications/api.py`                                           | \[S]   | CRIT-073      |
 | TASK-146 | FE: Notification bell + dropdown UI                        | FE          | 30 mns | —         | `src/components/NotificationBell.vue`                                 | \[P]   | CRIT-070      |
