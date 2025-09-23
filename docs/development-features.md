@@ -172,7 +172,7 @@ Then I can render meta tags (title/description), JSON-LD breadcrumbs, and canoni
 
 > **Derivation rule:** Tasks are generated from plan → contracts → entities → scenarios, per SDD `/tasks` guidance (inputs/outputs, parallelization) .
 
-| ID       | Title                                                                       | Owner/Skill            | Effort | Deps         | Artifacts                                                | \[P/S] | Traceability                    |
+| ID       | Title                                                                       | Owner/Skill            | Time   | Deps         | Artifacts                                                | \[P/S] | Traceability                    |
 | -------- | --------------------------------------------------------------------------- | ---------------------- | ------ | ------------ | -------------------------------------------------------- | ------ | ------------------------------- |
 | TASK-001 | Define public API contracts for categories & providers                      | Backend (Django/DRF)   | S      | —            | `contracts/public.yml`                                   | \[P]   | FEAT-001 → CRIT-001/002         |
 | TASK-002 | Write contract tests for `/api/public/categories` & `/api/public/providers` | Backend (QA/BE)        | S      | TASK-001     | `tests/contracts/test_public_api.py`                     | \[S]   | FEAT-001 → CRIT-001/002         |
@@ -352,7 +352,7 @@ And Admin can re-score or blacklist if underperforming
 
 # 3) Executable Tasks
 
-| ID       | Title                                                                       | Owner | Effort | Deps             | Artifacts                                                             | \[P/S] | Traceability  |
+| ID       | Title                                                                       | Owner | Time   | Deps             | Artifacts                                                             | \[P/S] | Traceability  |
 | -------- | --------------------------------------------------------------------------- | ----- | ------ | ---------------- | --------------------------------------------------------------------- | ------ | ------------- |
 | TASK-040 | Define contracts for registration, doc upload, vetting, re-evaluation       | BE    | S      | —                | `contracts/provider-onboarding.yml`                                   | \[P]   | CRIT-020..024 |
 | TASK-041 | Write contract tests for all endpoints                                      | QA/BE | S      | T040             | `tests/contracts/test_provider_onboarding.py`                         | \[S]   | CRIT-020..024 |
@@ -528,7 +528,7 @@ Then I see all admin vetting actions with timestamp, rationale, and actor
 
 # 3) Executable Tasks
 
-| ID       | Title                                                                     | Owner | Effort | Deps      | Artifacts                                  | \[P/S] | Traceability  |
+| ID       | Title                                                                     | Owner | Time   | Deps      | Artifacts                                  | \[P/S] | Traceability  |
 | -------- | ------------------------------------------------------------------------- | ----- | ------ | --------- | ------------------------------------------ | ------ | ------------- |
 | TASK-060 | Define vetting/decision/blacklist API contracts                           | BE    | S      | —         | `contracts/admin-vetting.yml`              | \[P]   | CRIT-030..034 |
 | TASK-061 | Write contract tests for vetting endpoints                                | QA/BE | S      | T060      | `tests/contracts/test_admin_vetting.py`    | \[S]   | CRIT-030..034 |
@@ -736,7 +736,7 @@ Then I see total users, active jobs, disputes & fraud trends
 
 # 3) Executable Tasks (per feature)
 
-| ID       | Title                                                                | Owner/Skill       | Effort | Deps      | Artifacts                               | \[P/S] | Traceability  |
+| ID       | Title                                                                | Owner/Skill       | Time   | Deps      | Artifacts                               | \[P/S] | Traceability  |
 | -------- | -------------------------------------------------------------------- | ----------------- | ------ | --------- | --------------------------------------- | ------ | ------------- |
 | TASK-080 | Define API contracts (escrow decisions, refunds, disputes, reports)  | BE (DRF)          | S      | —         | `contracts/management.yml`              | \[P]   | CRIT-040..044 |
 | TASK-081 | Contract tests for mgmt endpoints (auth, schemas, limits)            | QA/BE             | S      | T080      | `tests/contracts/test_management.py`    | \[S]   | CRIT-040..044 |
@@ -916,7 +916,7 @@ But cannot edit or delete any content
 
 # 3) Executable Tasks
 
-| ID       | Title                                                               | Owner/Skill | Effort | Deps      | Artifacts                                                     | \[P/S] | Traceability  |
+| ID       | Title                                                               | Owner/Skill | Time   | Deps      | Artifacts                                                     | \[P/S] | Traceability  |
 | -------- | ------------------------------------------------------------------- | ----------- | ------ | --------- | ------------------------------------------------------------- | ------ | ------------- |
 | TASK-100 | Define API contracts (threads, messages, attachments)               | BE          | S      | —         | `contracts/messaging.yml`                                     | \[P]   | CRIT-050..054 |
 | TASK-101 | Contract tests for messaging endpoints                              | QA/BE       | S      | T100      | `tests/contracts/test_messaging.py`                           | \[S]   | CRIT-050..054 |
@@ -1097,7 +1097,7 @@ And financing terms are returned
 
 # 3) Executable Tasks
 
-| ID       | Title                                                             | Owner/Skill | Effort | Deps      | Artifacts                                                   | \[P/S] | Traceability  |
+| ID       | Title                                                             | Owner/Skill | Time   | Deps      | Artifacts                                                   | \[P/S] | Traceability  |
 | -------- | ----------------------------------------------------------------- | ----------- | ------ | --------- | ----------------------------------------------------------- | ------ | ------------- |
 | TASK-120 | Define payment API contracts (deposit, release, refund, withdraw) | BE          | S      | —         | `contracts/payments.yml`                                    | \[P]   | CRIT-060..064 |
 | TASK-121 | Contract tests for escrow endpoints                               | QA/BE       | S      | T120      | `tests/contracts/test_payments.py`                          | \[S]   | CRIT-060..064 |
@@ -1272,7 +1272,7 @@ Then I see the type, recipient, channel, and status
 
 # 3) Executable Tasks
 
-| ID       | Title                                                      | Owner/Skill | Effort | Deps      | Artifacts                                                             | \[P/S] | Traceability  |
+| ID       | Title                                                      | Owner/Skill | Time   | Deps      | Artifacts                                                             | \[P/S] | Traceability  |
 | -------- | ---------------------------------------------------------- | ----------- | ------ | --------- | --------------------------------------------------------------------- | ------ | ------------- |
 | TASK-140 | Define notification API contracts                          | BE          | S      | —         | `contracts/notifications.yml`                                         | \[P]   | CRIT-070..074 |
 | TASK-141 | Contract tests for notification endpoints                  | QA/BE       | S      | T140      | `tests/contracts/test_notifications.py`                               | \[S]   | CRIT-070..074 |
@@ -1449,7 +1449,7 @@ Then I see actor, action, target review, rationale, and timestamp
 
 > Derived from contracts/entities/scenarios following your SDD tasking flow (inputs → tasks → parallelization) .
 
-| ID       | Title                                                                | Owner/Skill | Effort | Deps      | Artifacts                                                   | \[P/S] | Traceability             |
+| ID       | Title                                                                | Owner/Skill | Time   | Deps      | Artifacts                                                   | \[P/S] | Traceability             |
 | -------- | -------------------------------------------------------------------- | ----------- | ------ | --------- | ----------------------------------------------------------- | ------ | ------------------------ |
 | TASK-160 | Define Reviews API contracts & moderation states                     | BE          | S      | —         | `contracts/reviews.yml`                                     | \[P]   | FEAT-009 → CRIT-080..084 |
 | TASK-161 | Contract tests: create, list, flag, moderate                         | QA/BE       | S      | T160      | `tests/contracts/test_reviews.py`                           | \[S]   | CRIT-080..084            |
